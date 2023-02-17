@@ -1,0 +1,30 @@
+
+<script>
+// Maak een array met de dagen van de week
+    const dagenVanDeWeek = ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"];
+
+    // Kopje h2 "Alle dagen van de week zijn:"
+    document.write("<h2>Alle dagen van de week zijn:</h2>");
+    document.write(dagenVanDeWeek.join(", ") + ".");
+
+    // Kopje h2 "De werkdagen zijn:"
+    document.write("<h2>De werkdagen zijn:</h2>");
+    document.write(dagenVanDeWeek.slice(0, 5).join(", ") + ".");
+
+    // Kopje h2 "De weekenddagen zijn:"
+    document.write("<h2>De weekenddagen zijn:</h2>");
+    document.write(dagenVanDeWeek.slice(-2).join(", ") + ".");
+
+    // Kopje h2 "Alle dagen van de week in omgekeerde volgorde zijn:"
+    document.write("<h2>Alle dagen van de week in omgekeerde volgorde zijn:</h2>");
+    document.write(dagenVanDeWeek.reverse().join(", ") + ".");
+
+    // Kopje h2 "De werkdagen in omgekeerde volgorde zijn:"
+    document.write("<h2>De werkdagen in omgekeerde volgorde zijn:</h2>");
+    document.write(dagenVanDeWeek.slice(0, 5).reverse().join(", ") + ".");
+
+    // Kopje h2 "De weekenddagen in omgekeerde volgorde zijn:"
+    document.write("<h2>De weekenddagen in omgekeerde volgorde zijn:</h2>");
+    document.write(dagenVanDeWeek.slice(-1).reverse().join(", ") + ".");
+
+</script>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekdays</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <script>    
+
+    // Maak een array met de dagen van de week
+    const dagenVanDeWeek = ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"];
+
+    // Kopje h2 "Alle dagen van de week zijn:"
+    document.write("<h2>Alle dagen van de week zijn:</h2>");
+    document.write(dagenVanDeWeek.join(", ") + ".");
+
+    // Kopje h2 "De werkdagen zijn:"
+    document.write("<h2>De werkdagen zijn:</h2>");
+    document.write(dagenVanDeWeek.slice(0, 5).join(", ") + ".");
+
+    // Kopje h2 "De weekenddagen zijn:"
+    document.write("<h2>De weekenddagen zijn:</h2>");
+    document.write(dagenVanDeWeek.slice(5).join(", ") + ".");
+
+    // Kopje h2 "Alle dagen van de week in omgekeerde volgorde zijn:"
+    document.write("<h2>Alle dagen van de week in omgekeerde volgorde zijn:</h2>");
+    document.write(dagenVanDeWeek.slice().reverse().join(", ") + ".");
+
+    // Kopje h2 "De werkdagen in omgekeerde volgorde zijn:"
+    document.write("<h2>De werkdagen in omgekeerde volgorde zijn:</h2>");
+    document.write(dagenVanDeWeek.slice(0, 5).reverse().join(", ") + ".");
+
+    // Kopje h2 "De weekenddagen in omgekeerde volgorde zijn:"
+    document.write("<h2>De weekenddagen in omgekeerde volgorde zijn:</h2>");
+    document.write(dagenVanDeWeek.slice(5).reverse().join(", ") + ".");
+
+
+        
+    </script>
+
+</body>
+</html>
