@@ -1,0 +1,17 @@
+body{
+    background-color: aqua;
+    background-image: linear-gradient(#4B79A1,#4CA1AF,#C4E0E5);
+    text-align: center;
+}
+
+h2{
+    color: white;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+li{
+    font-size: 20px;
+    text-shadow: 2px 2px 4px #000000;
+}

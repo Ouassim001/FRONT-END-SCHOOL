@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAFELS-ARRAYS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <script>
+
+    // Maak een array aan met de tafels die we willen berekenen
+    var tafelArray = [2, 4, 6, 8];
+
+    // Loop over elk getal in de array en bereken de tafel
+    for (var i = 0; i < tafelArray.length; i++) {
+    // Maak een nieuwe array aan om de tafel in op te slaan
+    var tafel = [];
+
+    // Loop over de vermenigvuldigingen en voeg deze toe aan de tafel array
+    for (var j = 1; j <= 12; j++) {
+        tafel.push(j * tafelArray[i]);
+    }
+
+    // Schrijf de tafel array naar het scherm
+    document.write("<h2>Tafel van " + tafelArray[i] + "</h2>");
+    document.write("<ul>");
+    for (var k = 0; k < tafel.length; k++) {
+        document.write("<li>" + tafelArray[i] + " x " + (k + 1) + " = " + tafel[k] + "</li>");
+    }
+    document.write("</ul>");
+    }
+
+
+    </script>
+    
+</body>
+</html>
