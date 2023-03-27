@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Oplopende pyramide</title>
+  </head>
+  <body>
+    <div id="output"></div>
+    <script>
+      // Vraag de gebruiker om een getal
+      const num = parseInt(prompt("Voer een getal in:"));
+
+      // Maak een array van 1 t/m num
+      const array = Array.from({ length: num }, (_, i) => i + 1);
+
+      // Bouw de oplopende pyramide als een string
+      let output = "";
+      for (let i = 0; i < num; i++) {
+        output += array.slice(0, i + 1).join(" ") + "<br>";
+      }
+
+      // Voeg de pyramide toe aan het scherm
+      document.getElementById("output").innerHTML = output;
+    </script>
+  </body>
+</html>

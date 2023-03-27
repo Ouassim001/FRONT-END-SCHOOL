@@ -1,0 +1,140 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	text-align: center;
+	margin: 20px 0;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.flavor {
+	width: 300px;
+	margin: 20px;
+	border: 1px solid #ccc;
+	padding: 20px;
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+	margin-bottom: 10
+}
+
+/* Set global styles */
+body {
+	background-color: #F3EFEF;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	color: #7B4B94;
+	text-align: center;
+	margin-top: 50px;
+}
+
+/* Style the ice cream containers */
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 50px auto;
+	max-width: 800px;
+}
+
+.flavor {
+	background-color: #FFF;
+	border-radius: 5px;
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+	margin: 20px;
+	padding: 20px;
+	text-align: center;
+	width: 250px;
+}
+
+.flavor img {
+	border-radius: 50%;
+	height: 150px;
+	margin: 20px 0;
+	width: 150px;
+}
+
+.flavor h2 {
+	color: #7B4B94;
+	font-size: 24px;
+	margin: 10px 0;
+}
+
+.flavor p {
+	color: #666;
+	font-size: 14px;
+	margin: 10px 0;
+}
+
+.flavor button {
+	background-color: #7B4B94;
+	border: none;
+	border-radius: 3px;
+	color: #FFF;
+	cursor: pointer;
+	font-size: 16px;
+	margin: 20px 0;
+	padding: 10px 20px;
+	transition: background-color 0.3s ease;
+}
+
+.flavor button:hover {
+	background-color: #52396A;
+}
+
+/* Style the shopping cart */
+.cart {
+	background-color: #FFF;
+	border-radius: 5px;
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+	margin: 50px auto;
+	max-width: 800px;
+	padding: 20px;
+	text-align: center;
+}
+
+.cart h2 {
+	color: #7B4B94
+}
+
+.order-button{
+	background-color: #7B4B94;
+	border: none;
+	border-radius: 3px;
+	color: #FFF;
+	cursor: pointer;
+	font-size: 16px;
+	margin: 20px 0;
+	padding: 10px 20px;
+	transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+	background-color: #52396A;
+}
+
+
+#scoops {
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    background-color: #eee;
+    margin-left: 10px;
+  }

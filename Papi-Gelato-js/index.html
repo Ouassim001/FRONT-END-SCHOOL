@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Ice Cream Store</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Welcome To Papi Gelato!</h1>
+
+	<div class="container">
+		<div class="flavor">
+			<img src="images/wafer1.jpg">
+			<h2>Ice Cream Coupe</h2>
+			<p></p>
+			<button onclick="addToCart('Ice Cream Coupe')">Add to Cart</button>
+		</div>
+		<div class="flavor">
+			<img src="images/wafer2.jpg ">
+			<h2>Ice Cream Cone</h2>
+			<p></p>
+			<button onclick="addToCart('Ice Cream Cone')">Add to Cart</button>
+		</div>
+
+
+	<div class="container">
+		<div class="flavor">
+			<img src="images/vanilla.jpg">
+			<h2>Vanilla</h2>
+			<p>Our classic vanilla ice cream made with fresh cream and vanilla bean.</p>
+			<button onclick="addToCart('Vanilla')">Add to Cart</button>
+		</div>
+
+		<div class="flavor">
+			<img src="images/chocolate.jpg">
+			<h2>Chocolate</h2>
+			<p>A rich and creamy chocolate ice cream made with premium cocoa.</p>
+			<button onclick="addToCart('Chocolate')">Add to Cart</button>
+		</div>
+
+		<div class="flavor">
+			<img src="images/strawberry.jpg">
+			<h2>Strawberry</h2>
+			<p>A refreshing strawberry ice cream made with real strawberries.</p>
+			<button onclick="addToCart('Strawberry')">Add to Cart</button>
+		</div>
+
+		<div class="flavor">
+			<img src="images/mint.jpg">
+			<h2>Mint Chocolate Chip</h2>
+			<p>A cool and creamy mint ice cream with chocolate chips mixed in.</p>
+			<button onclick="addToCart('Mint Chocolate Chip')">Add to Cart</button>
+		</div>
+
+	</div>
+
+	<div class="cart">
+		<h2>Cart</h2>
+		<ul id="cart-items"></ul>
+		<button class="order-button">Order</button>
+	</div>
+
+
+
+	<!-- javascript -->
+	<script src="script.js"></script>
+	<script>
+		
+		let cart = [];
+		const cartItems = document.getElementById('cart-items');
+		function addToCart(item) {
+			cart.push(item);
+			cartItems.innerHTML = '';
+			cart.forEach(item => {
+				const li = document.createElement('li');
+				li.textContent = item;
+				cartItems.appendChild(li);
+			});
+		}
+	</script>
+</body>
+</html>
