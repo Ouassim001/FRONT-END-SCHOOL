@@ -15,7 +15,7 @@ for (let i = 1; i <= b; i++) {
       if (button.innerText == 1 || button.innerText == 7 || button.innerText == 13 || button.innerText == 19 || button.innerText == 25 || button.innerText == 29) {
         button.style.backgroundColor = 'red';
       } else {
-        button.style.backgroundColor = 'green';
+        button.style.backgroundColor = rgb(0, 214, 46);
       }
     });
   }

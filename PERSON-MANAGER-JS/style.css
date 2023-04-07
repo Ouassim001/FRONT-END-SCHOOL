@@ -1,0 +1,46 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+#container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#filter-container {
+	margin-bottom: 20px;
+}
+
+#filter-container label, #filter-container input, #filter-container button {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+#personen-tabel {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#personen-tabel th {
+	background-color: #ddd;
+	padding: 10px;
+	text-align: left;
+}
+
+#personen-tabel td {
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+
+.highlight {
+	background-color: yellow;
+}
